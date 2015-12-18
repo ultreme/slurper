@@ -20,7 +20,7 @@ func (s *Slurp) Slurp(in string) string {
 
 	words := strings.Split(in, " ")
 	for idx := range(words) {
-		if rand.Int() % 3 == 1 {
+		if rand.Int() % 2 == 1 {
 			res += "slurp "
 		}
 		res += words[idx]
